@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aperture</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="player_timer">%1s/%2s</string>
+    <string name="p2p_head">Watch With Peers</string>
+    <string name="movie_list">Movies</string>
+    <string name="peer_list">Peers</string>
+    <string name="err_txt">Something Went Wrong: %1s</string>
+    <string name="channel_name">Service</string>
+    <string name="channel_description">ServiceDesription</string>
+    <string name="connection_status">Devices Connected with %1s</string>
+</resources>

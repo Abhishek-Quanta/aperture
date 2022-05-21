@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movieListFragment">
+
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.example.aperture.MovieListFragment"
+        android:label="fragment_movie_list"
+        tools:layout="@layout/fragment_movie_list" >
+        <action
+            android:id="@+id/action_movieListFragment_to_wifiEnableFragment"
+            app:destination="@id/wifiEnableFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wifiEnableFragment"
+        android:name="com.example.aperture.network.WifiEnableFragment"
+        android:label="WifiEnableFragment" >
+        <action
+            android:id="@+id/action_wifiEnableFragment_to_peerListFragment"
+            app:destination="@id/peerListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peerListFragment"
+        android:name="com.example.aperture.network.PeerListFragment"
+        android:label="fragment_peer_list"
+        tools:layout="@layout/fragment_peer_list" />
+</navigation>
